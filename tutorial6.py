@@ -14,18 +14,8 @@ from loguru import logger
 # Defining the tools
 
 youtube = YouTubeSearchTool()
-
 wiki = WikipediaQueryRun(api_wrapper=WikipediaAPIWrapper())
-
 tools = [youtube, wiki]
-
-prefix = "Answer the questions asked. You have access to the following tools:"
-
-suffix = """Begin!
-{chat_history}
-Question: {input}
-{agent_scratchpad}
-"""
 
 prompt = hub.pull("hwchase17/react")
 
