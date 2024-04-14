@@ -7,13 +7,13 @@ from loguru import logger
 
 logger.info('Import successful')
 
-model = "EleutherAI/gpt-neo-125m"
+model = "google/flan-t5-small"
 tokenizer = transformers.AutoTokenizer.from_pretrained(model)
 
 logger.info("Loading Tokenizer successful")
 
 pipeline = transformers.pipeline(
-    task="text-generation",
+    #task="text-generation",
     model=model,
     tokenizer=tokenizer,
     torch_dtype=torch.bfloat16,
@@ -29,8 +29,8 @@ pipeline = transformers.pipeline(
 logger.info("Pipeline is prepared")
 
 llm = HuggingFacePipeline(pipeline=pipeline)
-prompt = PromptTemplate.from_template('Tell me about {something}')
+prompt = PromptTemplate.from_template('Tell me about {something} in a 100 words.')
 chain = LLMChain(llm=llm,
                  prompt=prompt
                  )
-logger.info(chain.invoke({'something':'bees'}).get('text'))
+logger.info(chain.invoke({'something': 'bees'}))
