@@ -10,3 +10,8 @@ transformers==4.35.2
 torch==2.1.0
 einops==0.7.0
 accelerate==0.26.1
+
+# Tutorial 6
+wikipedia==1.4.0
+youtube-search==2.1.2
+langchainhub==0.1.15
