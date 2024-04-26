@@ -25,5 +25,8 @@ Building an agent that uses Wikipedia and Youtube Tools
 ## [Tutorial7.py](tutorial7.py): OpenAI - Build an Agent with a Custom Tool
 Integrate a custom tool with the agent
 
+## [Tutorial8.py](tutorial8.py): OpenAI - LCEL with Pydantic Structured Output Parser
+Let the LLM provide structured JSON Responses.
+
 # References
 Gupta, Mehul. LangChain in your Pocket: Beginner's Guide to Building Generative AI Applications using LLMs. Kindle Edition. 

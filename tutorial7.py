@@ -1,7 +1,6 @@
 from langchain.agents import create_react_agent, AgentExecutor
 from langchain.memory import ConversationBufferMemory
 from langchain_openai import OpenAI
-from langchain_openai import OpenAI
 from langchain import hub
 from langchain.tools import BaseTool
 from langchain_community.tools.wikipedia.tool import WikipediaQueryRun
