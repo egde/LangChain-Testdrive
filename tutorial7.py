@@ -3,14 +3,10 @@ from langchain.memory import ConversationBufferMemory
 from langchain_openai import OpenAI
 from langchain import hub
 from langchain.tools import BaseTool
-from langchain_community.tools.wikipedia.tool import WikipediaQueryRun
-from langchain_community.utilities.wikipedia import WikipediaAPIWrapper
-from langchain_community.tools.youtube.search import YouTubeSearchTool
 
 from pyowm.owm import OWM
 from pyowm.utils.config import get_default_config
 
-from typing import Type
 from pydantic import BaseModel, Field
 from decouple import config
 from loguru import logger
