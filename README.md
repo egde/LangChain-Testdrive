@@ -28,5 +28,10 @@ Integrate a custom tool with the agent
 ## [Tutorial8.py](tutorial8.py): OpenAI - LCEL with Pydantic Structured Output Parser
 Let the LLM provide structured JSON Responses.
 
+## [Tutorial9.py](tutorial9.py): OpenAI - ChatBot with ConversationalBufferMemory
+A chatbot that remembers the conversation in a session. SHowing how to use callbacks for debugging purposes.
+
+
+
 # References
 Gupta, Mehul. LangChain in your Pocket: Beginner's Guide to Building Generative AI Applications using LLMs. Kindle Edition. 

@@ -1,7 +1,6 @@
 from langchain.output_parsers import PydanticOutputParser
 from langchain.prompts import PromptTemplate
 from langchain_openai import OpenAI
-from langchain.output_parsers import OutputFixingParser
 from langchain.pydantic_v1 import BaseModel, Field
 from decouple import config
 from loguru import logger
